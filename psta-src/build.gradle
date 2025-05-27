@@ -13,12 +13,12 @@ repositories {
 sourceSets {
     main {
         java {
-            srcDirs = ['psta-src/src/main/java']
+            srcDirs = ['src/main/java']
         }
     }
     test {
         java {
-            srcDirs = ['psta-src/src/test/java']
+            srcDirs = ['src/test/java']
         }
     }
 }
@@ -38,4 +38,3 @@ dependencies {
     testImplementation platform('org.junit:junit-bom:5.9.1')
     testImplementation 'org.junit.jupiter:junit-jupiter'
 }
-
