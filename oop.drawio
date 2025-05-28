@@ -1,0 +1,103 @@
+<mxfile host="drawio-plugin" modified="2025-05-28T05:11:19.700Z" agent="Mozilla/5.0 (Macintosh; Intel Mac OS X 10_15_7) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/122.0.0.0 Safari/537.36" etag="kYmEoLNC2hzOi4ws1Ff9" version="22.1.22" type="embed">
+  <diagram id="hl-w6gcQYIX-TVcyE80l" name="Page-1">
+    <mxGraphModel dx="1420" dy="246" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="0" pageScale="1" pageWidth="850" pageHeight="1100" background="none" math="0" shadow="0">
+      <root>
+        <mxCell id="0" />
+        <mxCell id="1" parent="0" />
+        <mxCell id="node0" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;App&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ main(String[]): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="445" y="233" width="166" height="79" as="geometry" />
+        </mxCell>
+        <mxCell id="node6" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Item&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- weight: double&lt;br/&gt;- name: String&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ getWeight(): double&lt;br/&gt;+ getName(): String&lt;br/&gt;+ toString(): String&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="-61" y="610" width="169" height="160" as="geometry" />
+        </mxCell>
+        <mxCell id="node2" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Participants&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- currentWeight: double&lt;br/&gt;- backpack: List&amp;lt;Item&amp;gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ getCurrentWeight(): double&lt;br/&gt;+ getBackpack(): List&amp;lt;Item&amp;gt;&lt;br/&gt;+ addItem(Item): boolean&lt;br/&gt;+ canCarry(Item): boolean&lt;br/&gt;+ toString(): String&lt;br/&gt;+ clearBackpack(): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="-537" y="398" width="216" height="242" as="geometry" />
+        </mxCell>
+        <mxCell id="node5" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;Person&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- age: int&lt;br/&gt;- name: String&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ getName(): String&lt;br/&gt;+ canCarry(Item): boolean&lt;br/&gt;+ toString(): String&lt;br/&gt;+ getAge(): int&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="-368" y="81" width="196" height="194" as="geometry" />
+        </mxCell>
+        <mxCell id="node1" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;i&gt;&amp;lt;&amp;lt;interface&amp;gt;&amp;gt;&lt;/i&gt;&lt;br/&gt;&lt;b&gt;Tour&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ redistributeLuggage(): void&lt;br/&gt;+ generateMarkdown(): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="170" y="109" width="214" height="121" as="geometry" />
+        </mxCell>
+        <mxCell id="node4" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;TourGuide&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ toString(): String&lt;br/&gt;+ canCarry(Item): boolean&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="-226" y="398" width="196" height="115" as="geometry" />
+        </mxCell>
+        <mxCell id="node3" value="&lt;p style=&quot;margin:0px;margin-top:4px;text-align:center;&quot;&gt;&lt;b&gt;TourImp&lt;/b&gt;&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;- tourType: String&lt;br/&gt;- allItems: List&amp;lt;Item&amp;gt;&lt;br/&gt;- durationHour: int&lt;br/&gt;- itemsAfter: Map&amp;lt;Participants, List&amp;lt;Item&amp;gt;&amp;gt;&lt;br/&gt;- lengthKm: double&lt;br/&gt;- TourName: String&lt;br/&gt;- itemsBefore: Map&amp;lt;Participants, List&amp;lt;Item&amp;gt;&amp;gt;&lt;br/&gt;- date: LocalDate&lt;br/&gt;- participants: List&amp;lt;Participants&amp;gt;&lt;br/&gt;- tourGuide: TourGuide&lt;/p&gt;&lt;hr size=&quot;1&quot;/&gt;&lt;p style=&quot;margin:0 0 0 4px;line-height:1.6;&quot;&gt;+ redistributeLuggage(): void&lt;br/&gt;+ generateMarkdown(): void&lt;/p&gt;" style="verticalAlign=top;align=left;overflow=fill;fontSize=14;fontFamily=Helvetica;html=1;rounded=0;shadow=0;comic=0;labelBackgroundColor=none;strokeWidth=1;" parent="1" vertex="1">
+          <mxGeometry x="189" y="398" width="318" height="328" as="geometry" />
+        </mxCell>
+        <mxCell id="edge1" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#000082;exitX=0.489;exitY=0.013;exitDx=0;exitDy=0;entryX=0.481;entryY=1.000;entryDx=0;entryDy=0;" parent="1" source="node2" target="node5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-431" y="322" />
+              <mxPoint x="-273" y="322" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge0" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=0;startArrow=none;endArrow=block;endSize=12;strokeColor=#000082;exitX=0.500;exitY=0.000;exitDx=0;exitDy=0;entryX=0.481;entryY=1.000;entryDx=0;entryDy=0;" parent="1" source="node4" target="node5" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points">
+              <mxPoint x="-128" y="321" />
+              <mxPoint x="-273" y="321" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="edge2" value="" style="html=1;rounded=1;edgeStyle=orthogonalEdgeStyle;dashed=1;startArrow=none;endArrow=block;endSize=12;strokeColor=#008200;exitX=0.277;exitY=0.000;exitDx=0;exitDy=0;entryX=0.500;entryY=1.000;entryDx=0;entryDy=0;" parent="1" source="node3" target="node1" edge="1">
+          <mxGeometry width="50" height="50" relative="1" as="geometry">
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="3" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=0.444;entryY=1;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="node2" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="360" y="730" as="sourcePoint" />
+            <mxPoint x="-430" y="650" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="360" y="840" />
+              <mxPoint x="-110" y="840" />
+              <mxPoint x="-260" y="840" />
+              <mxPoint x="-441" y="840" />
+              <mxPoint x="-440" y="770" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="7" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=1.005;entryY=0.38;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="189" y="680.04" as="sourcePoint" />
+            <mxPoint x="109.07999999999993" y="680" as="targetPoint" />
+            <Array as="points" />
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="12" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=1;entryY=0.674;entryDx=0;entryDy=0;entryPerimeter=0;" parent="1" target="node2" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="190" y="561" as="sourcePoint" />
+            <mxPoint x="50" y="570" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-220" y="560" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="13" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=-0.018;entryY=0.681;entryDx=0;entryDy=0;entryPerimeter=0;exitX=0.718;exitY=0.996;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="node2" target="node6" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="-360" y="719" as="sourcePoint" />
+            <mxPoint x="-61" y="700" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="-382" y="719" />
+              <mxPoint x="-210" y="719" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="14" value="" style="endArrow=open;endFill=1;endSize=12;html=1;rounded=0;entryX=1.031;entryY=0.348;entryDx=0;entryDy=0;entryPerimeter=0;exitX=-0.003;exitY=0.131;exitDx=0;exitDy=0;exitPerimeter=0;" parent="1" source="node3" edge="1">
+          <mxGeometry width="160" relative="1" as="geometry">
+            <mxPoint x="181.96600000000004" y="440.9680000000001" as="sourcePoint" />
+            <mxPoint x="-30.003999999999976" y="438.02" as="targetPoint" />
+            <Array as="points">
+              <mxPoint x="73.92" y="441" />
+            </Array>
+          </mxGeometry>
+        </mxCell>
+        <mxCell id="15" value="&lt;sub&gt;&amp;lt;&amp;lt;Abstract&amp;gt;&amp;gt;&lt;/sub&gt;" style="text;html=1;strokeColor=none;fillColor=none;align=center;verticalAlign=middle;whiteSpace=wrap;rounded=0;" vertex="1" parent="1">
+          <mxGeometry x="-340" y="70" width="130" height="60" as="geometry" />
+        </mxCell>
+      </root>
+    </mxGraphModel>
+  </diagram>
+</mxfile>
