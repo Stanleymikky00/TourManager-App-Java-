@@ -58,13 +58,16 @@ public class TourImp implements Tour {
         }
 
         //sort all weight by the heaviest first
+        // creating an anonymous inner class implementing the Comparator Interface
         Collections.sort(allItems, new Comparator<Item>() {
             @Override
             public int compare(Item a, Item b) {
                 return Double.compare(b.getWeight(), a.getWeight());
-            }
+            } // result in descending order from max to min
         });
+
         //for each item we assign it using the greedy principle (to the lightest eligible participant)
+
         for (int i = 0; i< allItems.size(); i++){
             Item currentItem = allItems.get(i);
 
@@ -108,6 +111,7 @@ public class TourImp implements Tour {
         }
     }
 
+    //with Mark-down we´ll be formatting text using plain characters and later convert to HTML
     @Override
     public void generateMarkdown() throws IOException {
 
@@ -118,12 +122,15 @@ public class TourImp implements Tour {
 
             // Title and general info
             lines.add("# " + tourType + " " + tourTitle);
-            lines.add("");
+            lines.add("\n");
             lines.add("**Name:** " + TourName);
+            lines.add("\n");
             lines.add("**Duration:** " + durationHour + " hours");
+            lines.add("\n");
             lines.add("**Length:** " + lengthKm + " km");
+            lines.add("\n");
             lines.add("**Guide:** " + tourGuide.getName());
-            lines.add("");
+            lines.add("\n");
 
             // Participants summary
             lines.add("## Participants and Their Luggage");
@@ -136,11 +143,12 @@ public class TourImp implements Tour {
 
 
                 if (items == null || items.isEmpty()) {
-                    lines.add("◻️◻️◻️◻️◻️◻️◻️◻️◻️◻️◻️◻️");
+                    lines.add("⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️⬜️");
                 } else {
                     for (Item item : items) {
                         lines.add("- " + item.getName() + " (" + item.getWeight() + " kg)");
                     }
+                    lines.add("🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩🟩");
                 }
 
                 double total = p.getCurrentWeight();

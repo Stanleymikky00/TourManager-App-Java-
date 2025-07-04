@@ -27,9 +27,10 @@ public class AppTest {
         tour.redistributeLuggage();
 
         //assertion
-        assertEquals(0.0, otto.getCurrentWeight(), "Otto should carry nothing");
+         assertEquals(0.0, otto.getCurrentWeight(), "Otto should carry nothing");
         assertTrue(max.getCurrentWeight() <= 5.0, "max should carry not less then 5.0");
         assertTrue(peter.getCurrentWeight() >= max.getCurrentWeight(), "peter should carry more than max");
+
 
     }
 

@@ -1,0 +1,14 @@
+# IntelliJ
+.idea/
+*.iml
+
+# Build outputs
+/build/
+out/
+.gradle/
+
+# Logs
+*.log
+
+# Mac system
+.DS_Store

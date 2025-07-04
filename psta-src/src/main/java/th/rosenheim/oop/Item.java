@@ -8,6 +8,10 @@ public class Item {
         this.name = name;
         this.weight = weight;
     }
+    public Item(){
+        this.name = "";
+        this.weight = 0;
+    }
     public String getName() {
         return name;
     }
